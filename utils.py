@@ -3,7 +3,7 @@ import sys
 import random
 
 # Function to run the code as a given input data to test and verify it further
-def run_code(code, input_Data):
+def run_code(code, input_data):
   old_stdin=sys.stdin
   old_stdout=sys.stdout
   
