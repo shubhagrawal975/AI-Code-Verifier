@@ -1,20 +1,24 @@
-# AI code runner
-# Executes user-provided code and captures the output or errors.
+from verifier import verify_code
+#function for taking multiline code as input from the user
+def get_multiline_input(prompt):
+    print(prompt)
+    print("Enter code. Type 'END' on a new line to finish:\n")
+    lines = []
+    while True:
+        line = input()
+        if line.strip() == "END":
+            break
+        lines.append(line)
+    return "\n".join(lines)
 
-import io
-import sys
+def main():
+    print("=== AI Code Verifier ===\n")
+    #inputs user code, and solution code
+    user_code = get_multiline_input("Enter USER code:")
+    reference_code = get_multiline_input("Enter REFERENCE code:")
+    # verifying the code's results
+    verify_code(user_code, reference_code)
 
-code= input("Enter your code:\n")
-old_stdout = sys.stdout
-sys.stdout=io.StringIO()
-
-try:
-    exec(code)
-    output = sys.stdout.getvalue()
-    sys.stdout=old_stdout
-    print("====== Output ======")
-    print("Output: ",output, end="")
-    print("---------------------")
-except Exception as e:
-    print("An error occurred: ", e)
-
+#This ensures main.py runs only when the user executes it
+if __name__ == "__main__":
+    main()
