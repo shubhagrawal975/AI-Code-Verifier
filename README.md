@@ -62,7 +62,7 @@ AI-Code-Verifier/
 
 ---
 
-##🔍 Learning Outcomes
+## 🔍 Learning Outcomes
 1. Understanding limitations of AI-generated code
 2. Building systems to verify correctness automatically
 3. Learning dynamic code execution in Python
@@ -70,14 +70,14 @@ AI-Code-Verifier/
 5. Understanding the importance of trust in AI systems
 6. Improving problem-solving and system design thinking
 
-##🚧 Limitations
+## 🚧 Limitations
 1. Requires a reference implementation for validation
 2. Does not understand problem semantics
 3. Test case generation is basic (random inputs)
 4. Limited to a Python execution environment
 5. Cannot guarantee coverage of all edge cases
 
-##🔮 Future Improvements
+## 🔮 Future Improvements
 1. Intelligent test case generation based on problem type
 2. Edge case detection and coverage analysis
 3. Static code analysis (AST-based checks)
@@ -86,6 +86,6 @@ AI-Code-Verifier/
 6. Web-based interface for easier interaction
 7. Performance benchmarking and optimization checks
 
-##💡 Key Insight
+## 💡 Key Insight
 
 Instead of trusting AI-generated outputs blindly, we must build systems that can verify, validate, and ensure correctness.
