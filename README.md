@@ -70,12 +70,16 @@ AI-Code-Verifier/
 5. Understanding the importance of trust in AI systems
 6. Improving problem-solving and system design thinking
 
+---
+
 ## 🚧 Limitations
 1. Requires a reference implementation for validation
 2. Does not understand problem semantics
 3. Test case generation is basic (random inputs)
 4. Limited to a Python execution environment
 5. Cannot guarantee coverage of all edge cases
+
+---
 
 ## 🔮 Future Improvements
 1. Intelligent test case generation based on problem type
@@ -85,6 +89,8 @@ AI-Code-Verifier/
 5. Multi-language support (C++, Java, etc.)
 6. Web-based interface for easier interaction
 7. Performance benchmarking and optimization checks
+
+---
 
 ## 💡 Key Insight
 
